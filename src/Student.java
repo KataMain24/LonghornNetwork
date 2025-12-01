@@ -6,22 +6,34 @@ import java.util.*;
  */
 public abstract class Student {
 
-    /** The student's full name. */
+    /**
+     * The student's full name.
+     */
     protected String name;
 
-    /** The student's age in years. */
+    /**
+     * The student's age in years.
+     */
     protected int age;
 
-    /** The student's gender as a free-form string. */
+    /**
+     * The student's gender as a free-form string.
+     */
     protected String gender;
 
-    /** The student's academic year (e.g., 1 = freshman, 2 = sophomore). */
+    /**
+     * The student's academic year (e.g., 1 = freshman, 2 = sophomore).
+     */
     protected int year;
 
-    /** The student's major field of study. */
+    /**
+     * The student's major field of study.
+     */
     protected String major;
 
-    /** The student's grade-point average. */
+    /**
+     * The student's grade-point average.
+     */
     protected double gpa;
 
     /**
@@ -41,9 +53,7 @@ public abstract class Student {
      * student and another.
      *
      * @param other another student in the network
-     * @return an integer score representing how strongly connected
-     *         this student is to {@code other}; higher values indicate
-     *         a stronger connection
+     * @return an integer score representing how strongly connected         this student is to other higher values indicate         a stronger connection
      */
     public abstract int calculateConnectionStrength(Student other);
 }

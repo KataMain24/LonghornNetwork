@@ -1,8 +1,16 @@
 import java.util.*;
 import java.util.concurrent.*;
 
+/**
+ * The type Main.
+ */
 // Main.java - Self-contained testing & grading with multiple built‑in test cases.
 public class Main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         // Create a list of test cases.
         List<List<UniversityStudent>> testCases = new ArrayList<>();
@@ -32,7 +40,12 @@ public class Main {
         System.out.println("Average Score across all test cases: " + (overallScore / count));
     }
 
-    // Test Case 1: Two groups (Group 1 with four students having mutual preferences, Group 2 with a pair)
+    /**
+     * Generate test case 1 list.
+     *
+     * @return the list
+     */
+// Test Case 1: Two groups (Group 1 with four students having mutual preferences, Group 2 with a pair)
     public static List<UniversityStudent> generateTestCase1() {
         List<UniversityStudent> students = new ArrayList<>();
 
@@ -67,7 +80,12 @@ public class Main {
         return students;
     }
 
-    // Test Case 2: Three students in which one has "DummyCompany" as a previous internship.
+    /**
+     * Generate test case 2 list.
+     *
+     * @return the list
+     */
+// Test Case 2: Three students in which one has "DummyCompany" as a previous internship.
     // This test case should yield a referral path when searching for "DummyCompany".
     public static List<UniversityStudent> generateTestCase2() {
         List<UniversityStudent> students = new ArrayList<>();
@@ -88,7 +106,12 @@ public class Main {
         return students;
     }
 
-    // Test Case 3: Three students where one has no roommate preferences.
+    /**
+     * Generate test case 3 list.
+     *
+     * @return the list
+     */
+// Test Case 3: Three students where one has no roommate preferences.
     // Two of them can be paired and one remains unpaired.
     public static List<UniversityStudent> generateTestCase3() {
         List<UniversityStudent> students = new ArrayList<>();
@@ -113,6 +136,10 @@ public class Main {
      * Automated test suite for grading a given test case.
      * Accepts a list of UniversityStudent objects and a testCaseNumber (for output clarity).
      * Returns an integer score.
+     *
+     * @param students       the students
+     * @param testCaseNumber the test case number
+     * @return the int
      */
     public static int gradeLab(List<UniversityStudent> students, int testCaseNumber) {
         int score = 0;

@@ -1,5 +1,8 @@
+/**
+ * The type Chat thread.
+ */
 public class ChatThread implements Runnable {
-     /**
+    /**
      * Creates a new chat task representing a message sent from the
      * given sender to the given receiver.
      *

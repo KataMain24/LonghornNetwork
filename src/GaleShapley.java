@@ -9,8 +9,8 @@ public class GaleShapley {
     /**
      * Assigns roommates to the given list of students using their
      * roommate preference lists.
-     * @param students the list of students to be paired as roommates;
-     *                 this list is typically modified in-place
+     *
+     * @param students the list of students to be paired as roommates;                 this list is typically modified in-place
      */
     public static void assignRoommates(List<UniversityStudent> students) {
     }
